@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico Circular con Colores desde API</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div style="width: 80%; margin: auto;">
+    <canvas id="myChart"></canvas>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // URL de la API
+    const apiUrl = "https://localhost:7034/Juegos/Usuario/655cea6751183a232ff67133";
+
+    // Inicializa arrays vacíos para los porcentajes y nombres
+    const porcentajes = [];
+    const nombres = [];
+
+    // Realiza la solicitud a la API
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            // Procesa los datos de la API y llena los arrays
+            data.forEach(item => {
+                nombres.push(item.nombre);
+                porcentajes.push(item.porcentaje);
+            });
+
+            // Generar colores aleatorios
+            const colores = porcentajes.map(() => getRandomColor());
+
+            // Configura y muestra el gráfico circular
+            const ctx = document.getElementById('myChart').getContext('2d');
+            const myChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: nombres,
+                    datasets: [{
+                        data: porcentajes,
+                        backgroundColor: colores,
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    legend: {
+                        display: true,
+                        position: 'bottom'
+                    }
+                }
+            });
+        })
+        .catch(error => console.error('Error al obtener los datos de la API:', error));
+
+    // Función para generar colores aleatorios en formato rgba
+    function getRandomColor() {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        return `rgba(${r}, ${g}, ${b}, 0.7)`;
+    }
+});
+</script>
+
+</body>
+</html>
+

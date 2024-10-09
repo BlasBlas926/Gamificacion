@@ -1,0 +1,53 @@
+/* Respuestas.css */
+
+.respuestas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.juego {
+    flex: 0 0 calc(33.3333% - 20px);
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+.juego:hover {
+    transform: scale(1.05);
+}
+
+.juego h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.juego p {
+    color: #666;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.juego p:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.sin-respuestas {
+    color: #666;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+}p:not(:last-child) {
+    margin-bottom: 10px;
+}

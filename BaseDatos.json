@@ -1,0 +1,22 @@
+{
+    "Usuarios": {
+        "_id": "ObjectId",
+        "nombre": "String",
+        "apellidoPaterno" : "String",
+        "apellidoMaterno" : "String",
+        "rol" : "String",
+        "pwd" : "String",
+        "email" : "String"
+    },
+    "Juegos": {
+        "_id": "ObjectId",
+        "nombre": "String",
+        "dificultad" : "String",
+        "descripcion" : "String",
+        "intentos" : "Number",
+        "palabra" : "Array",
+        "porcentaje" : "Number",
+        "retroalimentacion" : "String",
+        "usuario" : "ObjectId"
+    }
+}

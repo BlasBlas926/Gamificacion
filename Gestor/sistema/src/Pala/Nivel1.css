@@ -1,0 +1,98 @@
+.container {
+  position: relative; /* Añade posición relativa al contenedor */
+  padding:0px;
+  width: 45.7%; /* Ajusta según tus preferencias */
+  
+}
+
+.boton-siguiente {
+  position: absolute; /* Cambia a posición absoluta */
+  bottom: 0;
+  right: 0;
+}
+.white-bg {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px 0px #000000;
+  margin-top: 20px;
+}
+
+.titulo {
+  font-size: 20px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.subtitulo {
+  font-size: 20px;
+  text-align: center;
+}
+
+.instrucciones {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.imagen {
+  margin-top: 25px;
+}
+
+.input {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.boton {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #2c5581;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+
+.boton:hover, .boton-siguiente:hover {
+  background-color: #0056b3;
+}
+
+.retroalimentacion {
+  color: green; /* Color de texto para retroalimentación correcta */
+  font-weight: bold; /* Texto en negrita para retroalimentación correcta */
+}
+
+/* Para retroalimentación incorrecta */
+.retroalimentacion-incorrecta {
+  color: red;
+  font-weight: bold;
+}
+
+button:disabled {
+  background-color: #555555; /* color de fondo cuando el botón está deshabilitado */
+  cursor: not-allowed;
+}
+
+.boton-regresar {
+  position: absolute; /* Cambia a posición absoluta */
+  bottom: 0; /* Mueve el botón a la parte inferior */
+  left: 0; /* Mueve el botón a la izquierda */
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #2c5581;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boton-regresar:hover {
+  background-color: #0056b3;
+}

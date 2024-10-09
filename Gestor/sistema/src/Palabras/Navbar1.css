@@ -1,0 +1,88 @@
+/* Dashboard Wrapper */
+.dashboard-wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #000000;
+  color: #ecf0f1;
+  padding-top: 20px;
+}
+
+.sidebar-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-user {
+  padding: 10px;
+  color: #ecf0f1;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-item {
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+.sidebar-item:hover {
+  background: #a3ccf5;
+}
+
+.sidebar-item a {
+  color: #ecf0f1;
+  text-decoration: none;
+  display: block;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto; /* Agrega scroll cuando sea necesario */
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.seleccion-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seleccion-content {
+  width: 100%;
+  max-width: 800px;
+}
+
+.palabras-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.palabra-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #60b6f0;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+.palabra-link:hover {
+  background-color: #99cdef;
+}

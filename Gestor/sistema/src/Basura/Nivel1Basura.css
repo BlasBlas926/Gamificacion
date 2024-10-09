@@ -1,0 +1,59 @@
+.sopa-de-letras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sopa-row {
+    display: flex;
+}
+
+.sopa-letter {
+    padding: 15px;
+    margin: 2px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    font-size: 18px; /* Reduce el tamaño de la fuente */
+    text-align: center;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    display: flex; /* Añade estas líneas para centrar el texto */
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #fff;
+    color: #333;
+}
+/* Nivel1Basura.css */
+
+.guardar-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50; /* Color de fondo verde (puedes cambiarlo) */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.guardar-button:hover {
+    background-color: #45a049; /* Cambia el color al pasar el ratón sobre el botón */
+}
+
+
+.sopa-letter:hover {
+    background-color: #e0e0e0;
+}
+
+.sopa-letter.selected {
+    background-color: #4caf50;
+    color: #fff;
+}

@@ -1,0 +1,32 @@
+/* Bienvenida.css */
+
+.welcome-container {
+  position: relative;
+  text-align: center;
+  height: 100vh; /* Establece la altura al 100% del viewport para evitar el scroll vertical */
+  overflow: hidden; /* Oculta cualquier desbordamiento para prevenir el scroll */
+}
+
+.welcome-image {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+.btn-primary {
+  position: absolute;
+  bottom: 50px; /* Ajusta según sea necesario para la posición vertical */
+  left: 45%;
+
+  padding: 10px 20px;
+  background-color: #fb3dd5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.btn-primary:hover {
+  background-color: #0a5891;
+}
+

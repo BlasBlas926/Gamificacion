@@ -1,0 +1,91 @@
+.ahorcado-container {
+    border: 2px solid #3498db;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.ahorcado {
+    font-size: 24px;
+    line-height: 1.5;
+    white-space: pre;
+    font-family: 'Courier New', monospace;
+    color: #2c3e50; /* Rojo oscuro */
+}
+
+.palabra {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.intentos {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.letras-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.letra {
+    margin: 5px;
+    padding: 10px;
+    background-color: #3498db; /* Azul */
+    border: 2px solid #3498db; /* Borde Azul */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    cursor: pointer;
+}
+
+.letra:hover {
+    background-color: #2c3e50; /* Azul oscuro en hover */
+    color: #ecf0f1; /* Blanco en hover */
+    border: 2px solid #2c3e50; /* Borde Azul oscuro en hover */
+}
+
+.letra.adivinada {
+    background-color: #555555;
+    cursor: not-allowed;
+}
+/* Medicina.css */
+
+/* ... tus otros estilos ... */
+
+button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #008CBA; /* color de fondo */
+    border: none;
+    
+    color: white; /* color del texto */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4CAF50; /* color de fondo al pasar el mouse */
+    color: white; /* color del texto al pasar el mouse */
+}
+
+button:disabled {
+    background-color: #555555; /* color de fondo cuando el botón está deshabilitado */
+    cursor: not-allowed;
+}
+.botones-container {
+    display: flex;
+    justify-content: space-between;
+    width: 200px; /* puedes ajustar este valor según tus necesidades */
+}
